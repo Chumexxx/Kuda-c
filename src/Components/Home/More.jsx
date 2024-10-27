@@ -33,7 +33,7 @@ const More = () => {
     return(
         <Container>
 
-            <Wrapper>
+            {/* <Wrapper> */}
 
                 <h1>More for you</h1>
 
@@ -104,7 +104,7 @@ const More = () => {
 
                 </MoneyDiv>
 
-            </Wrapper>
+            {/* </Wrapper> */}
             <hr style={{color: "gray"}} />
             
         </Container>
@@ -124,17 +124,17 @@ const Container = styled.div`
     }
 `
 
-const Wrapper = styled.div`
-    width: 85%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+// const Wrapper = styled.div`
+//     width: 85%;
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
 
-@media (max-width: 800px) {
-    width: auto;
-    justify-content: center;
-}
-`
+// @media (max-width: 800px) {
+//     width: auto;
+//     justify-content: center;
+// }
+// `
 
 const CardDiv = styled.div`
     display: flex;
