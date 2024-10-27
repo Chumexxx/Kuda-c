@@ -42,10 +42,10 @@ const Container = styled.div`
 `
 
 const Wrapper = styled.div`
-width: 85%;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
 @media (max-width: 800px) {
     width: auto;

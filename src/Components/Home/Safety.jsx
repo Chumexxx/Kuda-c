@@ -66,10 +66,10 @@ img{
 `
 
 const TextDiv = styled.div`
-max-width: 320px;
-display: flex;
-flex-direction: column;
-justify-content: center;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 @media (max-width: 800px) {
     max-width: auto;

@@ -67,18 +67,18 @@ const CardDiv = styled.div`
 `
 
 const Card = styled.div`
-height: 130px;
-width: 300px;
-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-background-color: white;
-color: purple;
-font-weight: 700;
-display: flex;
-flex-direction: column;
-justify-content: center;
-justify-content: space-between;
-padding: 10px;
-border-radius: 15px;
+    height: 130px;
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: white;
+    color: purple;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 15px;
 
     img{
         border: 2px solid;

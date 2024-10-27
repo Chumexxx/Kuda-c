@@ -37,10 +37,10 @@ const Container = styled.div`
 `
 
 const Wrapper = styled.div`
-width: 85%;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
 @media (max-width: 800px) {
     width: auto;
@@ -54,10 +54,10 @@ const FunctionsImage = styled.div`
 `
 
 const TextDiv = styled.div`
-max-width: 320px;
-display: flex;
-flex-direction: column;
-justify-content: center;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 @media (max-width: 800px) {
     max-width: auto;
     align-items: center;
