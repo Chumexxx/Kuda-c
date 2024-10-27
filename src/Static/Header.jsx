@@ -75,6 +75,7 @@ const Header = () => {
             </Buttons>
 
         </Container>
+
         {toggle === false ? null : <Sidebar toggle={toggle} setToggle={setToggle} />}
         </>
     )
@@ -91,6 +92,10 @@ display: flex;
 justify-content: space-evenly;
 align-items: center;
 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+@media (max-width: 800px) {
+    /* width: 100%; */
+}
 `
 const LogoNav = styled.div`
 display: flex;

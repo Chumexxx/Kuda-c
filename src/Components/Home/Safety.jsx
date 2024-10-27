@@ -48,12 +48,21 @@ flex-wrap: wrap;
 justify-content: space-between;
 
 @media (max-width: 800px) {
-    width: 90%;
+    width: auto;
+    justify-content: center;
 }
 `
 
 const ImgDiv = styled.div`
-
+    display: flex;
+    justify-content: center;
+img{
+    @media (max-width: 800px) {
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+}
 `
 
 const TextDiv = styled.div`
@@ -61,11 +70,20 @@ max-width: 320px;
 display: flex;
 flex-direction: column;
 justify-content: center;
+
 @media (max-width: 800px) {
-    max-width: 100%;
-   align-items: center;
-   text-align: center;
+    max-width: auto;
+    align-items: center;
+    text-align: center;
 }
+
+h1{
+    color: #40196D;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: normal;
+}
+
 
 h1{
     color: #40196D;

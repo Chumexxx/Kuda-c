@@ -53,8 +53,9 @@ flex-wrap: wrap;
 justify-content: space-between;
 
 @media (max-width: 800px) {
-    width: 90%;
-} 
+    width: auto;
+    justify-content: center;
+}
 `
 
 const TextDiv = styled.div`
@@ -63,9 +64,9 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 @media (max-width: 800px) {
-    max-width: 100%;
-   align-items: center;
-   text-align: center;
+    max-width: auto;
+    align-items: center;
+    text-align: center;
 }
 
 h1{

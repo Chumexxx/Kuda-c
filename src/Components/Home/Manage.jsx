@@ -37,16 +37,15 @@ const Container = styled.div`
 `
 
 const Wrapper = styled.div`
-    width: 85%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
+width: 85%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
 
-    @media (max-width: 800px) {
-        width: 90%;
-    } 
-
+@media (max-width: 800px) {
+    width: auto;
+    justify-content: center;
+}
 `
 
 const FunctionsImage = styled.div`
@@ -55,20 +54,20 @@ const FunctionsImage = styled.div`
 `
 
 const TextDiv = styled.div`
-    max-width: 320px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    @media (max-width: 800px) {
-        max-width: 100%;
+max-width: 320px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+@media (max-width: 800px) {
+    max-width: auto;
     align-items: center;
     text-align: center;
-    }
+}
 
-    h1{
-        color: #40196D;
-        font-size: 36px;
-        font-weight: 800;
-        line-height: normal;
-    }
+h1{
+    color: #40196D;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: normal;
+}
 `

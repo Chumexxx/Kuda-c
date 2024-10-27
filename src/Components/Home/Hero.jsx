@@ -65,19 +65,22 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 z-index: 2;
-/* @media (max-width: ;800px) {
-    width: 90%;
-} */
+@media (max-width: 800px) {
+    width: auto;
+    justify-content: center;
+}
 `
 const TextBox = styled.div`
 max-width: 400px;
 display: flex;
 flex-direction: column;
 justify-content: center;
+
 @media (max-width: 800px) {
-    max-width: 100%;
-   align-items: center;
-   text-align: center;
+    max-width: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 h1{
     color: #40196D;
@@ -89,7 +92,9 @@ h1{
 const ImageBox = styled.div`
 img{
     @media (max-width: 800px) {
-    width: 100%;
+    width: auto;
+    justify-content: center;
+    align-items: center;
 }
 }
 `
