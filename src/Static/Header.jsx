@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import HeaderLogo from "../assets/Kuda.png"
 import { Link } from "react-router-dom"
 import NigIcon from "../assets/nigeria.png"
-import { IoReorderTwoOutline } from "react-icons/io5";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from 'react';
 import Sidebar from './SideBar';
 
@@ -70,7 +70,8 @@ const Header = () => {
                     <img src={NigIcon} alt="nig" />
                 </ConBtn>
                 <SideNav onClick={handleToggle}>
-                    <IoReorderTwoOutline />
+                    {/* <IoReorderTwoOutline /> */}
+                    <GiHamburgerMenu/>
                 </SideNav>
             </Buttons>
 
