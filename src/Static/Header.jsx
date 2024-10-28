@@ -1,6 +1,6 @@
 import {MdArrowDropDown} from 'react-icons/md';
 import styled from 'styled-components';
-import KudaLogo from "../assets/Kuda.png"
+import KudaLogo from "../assets/kuda.png"
 import { Link } from "react-router-dom"
 import NigIcon from "../assets/nigeria.png"
 import { GiHamburgerMenu } from "react-icons/gi";

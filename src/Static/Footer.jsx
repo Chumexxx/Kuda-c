@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import FooterLogo from "../assets/Kuda.png"
+import FooterLogo from "../assets/kuda.png"
 import { BiLogoPlayStore } from "react-icons/bi";
 import { FaApple } from "react-icons/fa"
 import { FaXTwitter } from "react-icons/fa6";
