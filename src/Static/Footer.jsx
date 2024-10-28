@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Kuda from "../assets/Kuda.png"
+import FooterLogo from "../assets/Kuda.png"
 import { BiLogoPlayStore } from "react-icons/bi";
 import { FaApple } from "react-icons/fa"
 import { FaXTwitter } from "react-icons/fa6";
@@ -20,7 +20,7 @@ const Footer = () => {
                 <EveryList>
                     <FirstList>
                         <ul>
-                            <li><img src={Kuda} alt="" /></li>
+                            <li><img src={FooterLogo} alt="" /></li>
                         </ul>
                     </FirstList>
 
