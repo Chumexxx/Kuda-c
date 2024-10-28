@@ -8,7 +8,7 @@ import More from "../Components/Home/More";
 import Safety from "../Components/Home/Safety";
 import Save from "../Components/Home/Save";
 import Simpler from "../Components/Home/Simpler";
-import Testimonials from "../Components/Testimonials";
+import Testimonials from "../Components/Home//Testimonials";
 
 
 
