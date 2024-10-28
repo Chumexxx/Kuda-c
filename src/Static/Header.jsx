@@ -1,6 +1,6 @@
 import {MdArrowDropDown} from 'react-icons/md';
 import styled from 'styled-components';
-import HeaderLogo from "../assets/kuda.png"
+import HeaderLogo from "../assets/Kuda.png"
 import { Link } from "react-router-dom"
 import NigIcon from "../assets/nigeria.png"
 import { IoReorderTwoOutline } from "react-icons/io5";

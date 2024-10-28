@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {Link } from "react-router-dom"
-import HeaderLogo from "../assets/kuda.png"
+import HeaderLogo from "../assets/Kuda.png"
 import { IoMdArrowDropright } from "react-icons/io";
 
 
