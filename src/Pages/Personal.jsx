@@ -12,22 +12,23 @@ import Testimonials from "../Components/Home//Testimonials";
 
 
 
-const Personal = () => {
-    return(
+const Personal = ({ toggle }) => {
+    if (toggle) return null; 
+    
+    return (
         <div>
-            <Hero/>
-            <Info/>
-            <Simpler/>
-            <Manage/>
-            <Save/>
-            <Safety/>
-            <Happy/>
-            <Clear/>
-            <Testimonials/>
-            <Freedom/>
-            <More/>
+            <Hero />
+            <Info />
+            <Simpler />
+            <Manage />
+            <Save />
+            <Safety />
+            <Happy />
+            <Clear />
+            <Testimonials />
+            <Freedom />
+            <More />
         </div>
-    )
-}
-
+    );
+};
 export default Personal;

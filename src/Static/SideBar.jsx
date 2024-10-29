@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {Link } from "react-router-dom"
 import HeaderLogo from "../assets/kuda.png"
 import { IoMdArrowDropright } from "react-icons/io";
+import { MdClose } from "react-icons/md";
 
 
 
@@ -13,7 +14,13 @@ const SideBar = () => {
         <Container>
 
             <Wrapper>
-
+                <div style={{display: "flex", justifyContent: "right"}}>
+                    <Link to="/" onClick={test}>
+                        <MdClose size={40} color="black"/>
+                    </Link>
+                    
+                </div>
+                    
                 <Buttons>
                     <img src={HeaderLogo} alt="" />
 
@@ -26,37 +33,29 @@ const SideBar = () => {
                 <Link style={{textDecorationLine:"none" , display: "flex" , justifyContent: "space-between"}} to="/" onClick={test}>
                 <nav>Personal</nav>
                 <IoMdArrowDropright/>
-                {/* <hr style={{fontSize: "2px", color: "gray"}}/> */}
                 </Link>
 
                 <Link style={{textDecorationLine:"none" , display: "flex" , justifyContent: "space-between"}}  to="/business" onClick={test} >
                 <nav>Business</nav>
                 <IoMdArrowDropright/>
-                {/* <hr style={{fontSize: "2px", color: "gray"}}/> */}
                 </Link>
 
                 <Link style={{textDecorationLine:"none" , display: "flex" , justifyContent: "space-between"}} to="/companies" onClick={test}>
                 <nav>Companies</nav>
                 <IoMdArrowDropright/>
-                {/* <hr style={{fontSize: "2px", color: "gray"}}/> */}
                 </Link>
 
-                <Link style={{textDecorationLine:"none" , display: "flex" , justifyContent: "space-between"}}  to="/developers" onClick={test}>
+                <Link style={{textDecorationLine:"none" }}  to="/developers" onClick={test}>
                 <nav>Developers</nav>
-                <IoMdArrowDropright/>
-                {/* <hr style={{fontSize: "2px", color: "gray"}}/> */}
                 </Link>
 
-                <Link style={{textDecorationLine:"none" , display: "flex" , justifyContent: "space-between"}}  to="/contactUs" onClick={test}>
+                <Link style={{textDecorationLine:"none"}}  to="/contactUs" onClick={test}>
                 <nav>Contact Us</nav>
-                <IoMdArrowDropright/>
-                {/* <hr style={{fontSize: "2px", color: "gray"}}/> */}
                 </Link>
 
                 <Link style={{textDecorationLine:"none" , display: "flex" , justifyContent: "space-between"}}  to="/help" onClick={test}>
                 <nav>Help</nav>
                 <IoMdArrowDropright/>
-                {/* <hr style={{fontSize: "2px", color: "gray"}}/> */}
                 </Link>
 
             </Wrapper>

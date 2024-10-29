@@ -9,94 +9,89 @@ import Sidebar from './SideBar';
 
 
 const Header = () => {
-    const [toggle, setToggle] = useState(false)
+    const [toggle, setToggle] = useState(false);
 
     const handleToggle = () => {
-        setToggle(!toggle)
-    }
+        setToggle(!toggle);
+    };
 
-    console.log(toggle);
-
-    return(
+    return (
         <>
-        
-        <Container>
+            {!toggle && (
+                <Container>
+                    <LogoNav>
+                        <Logo>
+                            <img src={KudaLogo} alt="Kuda Logo" />
+                        </Logo>
+                        <Navigations>
+                            <Link style={{ textDecoration: "none" }} to="/">
+                                <nav>
+                                    <span>Personal</span>
+                                    <MdArrowDropDown size={20} />
+                                </nav>
+                            </Link>
+                            <Link style={{ textDecoration: "none" }} to="/business">
+                                <nav>
+                                    <span>Business</span>
+                                    <MdArrowDropDown size={20} />
+                                </nav>
+                            </Link>
+                            <Link style={{ textDecoration: "none" }} to="/companies">
+                                <nav>
+                                    <span>Company</span>
+                                    <MdArrowDropDown size={20} />
+                                </nav>
+                            </Link>
+                            <Link style={{ textDecoration: "none" }} to="">
+                                <nav>
+                                    <span>Help</span>
+                                    <MdArrowDropDown size={20} />
+                                </nav>
+                            </Link>
+                        </Navigations>
+                    </LogoNav>
+                    <Buttons>
+                        <SignBtn>Sign In</SignBtn>
+                        <Link to="/companies">
+                            <JoinBtn>Join Kuda</JoinBtn>
+                        </Link>
+                        <ConBtn>
+                            <img src={NigIcon} alt="nig" />
+                        </ConBtn>
+                        <SideNav onClick={handleToggle}>
+                            <GiHamburgerMenu />
+                        </SideNav>
+                    </Buttons>
+                </Container>
+            )}
 
-            <LogoNav>
-
-                <Logo>
-                    <img src={KudaLogo} alt="" />
-                </Logo>
-
-                <Navigations>
-
-                    <Link style={{textDecoration: "none"}} to="/">
-                    <nav>
-                        <span>Personal</span>
-                        <MdArrowDropDown size={20} />
-                    </nav>
-                    </Link>
-
-                    <Link style={{textDecoration: "none"}}  to="/business">
-                    <nav>
-                        <span >Business</span>
-                        <MdArrowDropDown size={20} />
-                    </nav>
-                    </Link>
-
-                    <Link style={{textDecoration: "none"}}  to="/companies">
-                    <nav>
-                        <span>Company</span>
-                        <MdArrowDropDown size={20} />
-                    </nav>
-                    </Link>
-
-                    <Link style={{textDecoration: "none"}}  to="">
-                    <nav>
-                        <span>Help</span>
-                        <MdArrowDropDown size={20} />
-                    </nav>
-                    </Link>
-                </Navigations>
-
-            </LogoNav>
-
-            <Buttons>
-                <SignBtn>Sign In</SignBtn>
-                <Link to="/companies">
-                <JoinBtn>Join Kuda</JoinBtn>
-                </Link>
-                <ConBtn>
-                    <img src={NigIcon} alt="nig" />
-                </ConBtn>
-                <SideNav onClick={handleToggle}>
-                    {/* <IoReorderTwoOutline /> */}
-                    <GiHamburgerMenu/>
-                </SideNav>
-            </Buttons>
-
-        </Container>
-
-        {toggle === false ? null : <Sidebar toggle={toggle} setToggle={setToggle} />}
+            {toggle && <Sidebar toggle={toggle} setToggle={setToggle} />}
         </>
-    )
-}
+    );
+};
 
 export default Header;
 
 
-const Container = styled.div`
-width: 100%;
-height: 70px;
-position: fixed;
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
-@media (max-width: 800px) {
-    /* width: 100%; */
-}
+const Container = styled.div`
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    @media (max-width: 800px) {
+        justify-content: space-between;
+        padding: 0 20px;
+        height: 60px;
+    }
 `
 const LogoNav = styled.div`
 display: flex;

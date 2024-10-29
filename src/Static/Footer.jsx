@@ -208,37 +208,45 @@ export default Footer;
 
 const Container = styled.div`
     max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px 10px;
-    min-height: calc(120vh);
+    margin: auto;
+    padding: 200px 10px;
+    min-height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    margin-bottom: 60px; /* Add space below to prevent overlap */
 
     @media (max-width: 800px) {
-        width: 500px;
+        width: 100%;
+        /* padding: 800px 10px; */
+        margin-top: 600px;
     }
-`
+`;
+
 
 const Wrapper = styled.div`
     width: 85%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px;
+    
     @media (max-width: 800px) {
-        width: auto;
+        width: 100%;
         justify-content: center;
+        flex-direction: column; /* Stack items on smaller screens */
     }
-`
+`;
 
 const EveryList = styled.div`
     display: flex;
+    gap: 20px;
 
     @media (max-width: 800px) {
-    flex-wrap: wrap;
-}
-`
+        flex-direction: column;
+    }
+`;
 
 const FirstList = styled.div`
 
@@ -354,9 +362,9 @@ const NewList = styled.div`
     display: flex;
     margin-bottom: 50px;
 
-    /* @media (max-width: 800px) {
+    @media (max-width: 800px) {
         flex-wrap: wrap;
-    } */
+    }
 `
 
 const SocialDiv = styled.div`
