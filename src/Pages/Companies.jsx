@@ -98,7 +98,7 @@ const Logo = styled.div`
 
 
 const Contain = styled.div`
-    border: 2px #40196d solid;
+    border: 2px black solid;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
