@@ -324,6 +324,10 @@ const Buttons = styled.div`
     margin-top: 50px;
     display: flex;
     gap: 20px;
+
+    a{
+        text-decoration: none;
+    }
 `
 
 const Button = styled.div`
